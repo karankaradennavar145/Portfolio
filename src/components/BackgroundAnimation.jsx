@@ -1,6 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
-import animationData from "../assets/packaging-animation.json";
+import animationData from "./Animation.json";
+import { BrowserRouter } from "react-router-dom";
 
 const BackgroundAnimation = () => {
   return (

@@ -14,61 +14,60 @@ const About: React.FC = () => {
   const skillIcons = [
     {
       name: 'SAP',
-      icon: '/skills/sap.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/sap.png',
       alt: 'SAP Logo',
       size: 'w-20 h-20',
     },
     {
       name: 'SolidWorks',
-      icon: '/skills/solidworks.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/solidworks.png',
       alt: 'SolidWorks Logo',
       size: 'w-16 h-16',
     },
     {
       name: 'ArtiosCAD',
-      icon: '/skills/artioscad.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/artioscad.png',
       alt: 'ArtiosCAD Logo',
       size: 'w-16 h-16',
     },
     {
       name: 'Adobe Creative Suite',
-      icon: '/skills/adobe.png',
-      alt: 'Adobe Logo',
-      size: 'w-20 h-20',
+      icon: '<img src={`${import.meta.env.BASE_URL}skills/adobe.png`} alt="Adobe Creative Suite" size="w-20 h-20" />'
     },
+    
     {
       name: 'ISTA',
-      icon: '/skills/ista.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/ista.png',
       alt: 'ISTA Logo',
       size: 'w-20 h-20',
     },
     {
       name: 'ASTM',
-      icon: '/skills/astm.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/astm.png',
       alt: 'ASTM Logo',
       size: 'w-20 h-20',
     },
     {
       name: 'FDA',
-      icon: '/skills/fda.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/fda.png',
       alt: 'FDA Logo',
       size: 'w-20 h-20',
     },
     {
       name: 'Xerox',
-      icon: '/skills/xerox.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/xerox.png',
       alt: 'Xerox Logo',
       size: 'w-20 h-20',
     },
     {
       name: 'ZÜND',
-      icon: '/skills/zund.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/zund.png',
       alt: 'ZÜND Logo',
       size: 'w-20 h-20',
     },
     {
       name: 'G7 Color Certified',
-      icon: '/skills/g7.png',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/g7.png',
       alt: 'G7 Logo',
       size: 'w-16 h-16',
     },
@@ -86,7 +85,7 @@ const About: React.FC = () => {
         >
           <div className="w-48 h-48 bg-gray-300 dark:bg-gray-700 rounded-full mr-8 flex-shrink-0 overflow-hidden">
             <img 
-              src="/profile.jpg" 
+              src={`${import.meta.env.BASE_URL}/skills/profile.jpg`}
               alt="Karan Karadennavar" 
               className="w-full h-full object-cover"
             />
@@ -219,7 +218,7 @@ const About: React.FC = () => {
                 className="bg-gray-100 dark:bg-gray-300 text-blue-700 dark:text-blue-700 px-4 py-2 rounded-xl text-center text-sm font-medium transition-all duration-300 cursor-pointer flex flex-col items-center justify-center hover:scale-105 hover:shadow-lg hover:bg-gray-200 dark:hover:bg-gray-400"
               >
                 <img
-                  src={skill.icon}
+                  src={`${import.meta.env.BASE_URL}skills/${skill.name.toLowerCase().replace(' ', '-')}.png`}
                   alt={skill.alt}
                   className={`${skill.size} object-contain mx-auto`}
                 />

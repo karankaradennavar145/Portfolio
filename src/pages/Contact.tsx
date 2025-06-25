@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin, Github, Send, CheckCircle, Loader2 } from 'lucide-react';
 import emailjs from 'emailjs-com';
+import BackgroundAnimation from '../components/BackgroundAnimation';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -78,6 +79,7 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
+        <BackgroundAnimation />
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -299,7 +301,7 @@ const Contact: React.FC = () => {
           <h3 className="text-lg font-semibold mb-4 text-center">Connect with me</h3>
           <div className="flex justify-center space-x-4">
             <a
-              href="https://linkedin.com/in/karankaradennavar"
+              href="https://www.linkedin.com/in/karan-karadennavar-b12917b6/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
