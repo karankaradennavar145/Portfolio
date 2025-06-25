@@ -32,7 +32,7 @@ const About: React.FC = () => {
     },
     {
       name: 'Adobe Creative Suite',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/adobe.png'
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/adobe.png',
     
     {
       name: 'ISTA',
