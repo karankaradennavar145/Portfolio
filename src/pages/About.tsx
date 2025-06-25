@@ -42,7 +42,7 @@ const About: React.FC = () => {
     },
     {
       name: 'Xerox',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-20 h-20" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-16 h-16" />,
     },
     {
       name: 'ZÜND',
