@@ -311,8 +311,8 @@ const Contact: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="bg-gradient-to-r from-blue-900 via-blue-800 to-purple-900 rounded-2xl p-8 text-center mt-12"
         >
-          <h3 className="text-2xl font-bold mb-4">Thank you for visiting the portfolio!</h3>
-          <p className="text-lg text-gray-200 mb-6">Please drop a like if you liked it.</p>
+          <h3 className="text-2xl font-bold mb-4">Thanks for stopping by!</h3>
+          <p className="text-lg text-gray-200 mb-6">If you found something interesting, feel free to leave a like.</p>
           <div className="flex flex-col items-center gap-4">
             <button
               onClick={handleLike}
