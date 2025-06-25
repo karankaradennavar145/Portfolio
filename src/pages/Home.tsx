@@ -41,16 +41,14 @@ const Home: React.FC = () => {
                   <ExternalLink size={20} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 
-                <button
-                  onClick={() => window.open('/resume.pdf', '_blank')}
-                  className="flex items-center space-x-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full font-semibold transition-colors duration-200"
+                <a
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
+                  download="Karan_Karadennavar_Resume.pdf"
+                  className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12C2.25 12 5.25 5.25 12 5.25s9.75 6.75 9.75 6.75-3 6.75-9.75 6.75S2.25 12 2.25 12z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>Preview Resume</span>
-                </button>
+                  <Download size={20} />
+                  <span className="font-semibold">Download Full Resume</span>
+                </a>
               </div>
             </motion.div>
             
