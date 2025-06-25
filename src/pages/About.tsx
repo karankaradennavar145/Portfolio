@@ -14,7 +14,7 @@ const About: React.FC = () => {
   const skillIcons = [
     {
       name: 'SAP',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/sap.png`} alt="SAP Logo" className="w-16 h-16" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/sap.png`} alt="SAP Logo" className="w-20 h-20" />,
     },
     {
       name: 'SolidWorks',
@@ -30,7 +30,7 @@ const About: React.FC = () => {
     },
     {
       name: 'ISTA',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/ista.png`} alt="ISTA Logo" className="w-16 h-16" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/ista.png`} alt="ISTA Logo" className="w-20 h-20" />,
     },
     {
       name: 'ASTM',
@@ -42,7 +42,7 @@ const About: React.FC = () => {
     },
     {
       name: 'Xerox',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-16 h-16" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-20 h-20" />,
     },
     {
       name: 'ZÜND',
@@ -203,22 +203,6 @@ const About: React.FC = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center"
-        >
-          <button
-            onClick={() => window.open('/resume.pdf', '_blank')}
-            className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            <Download size={20} />
-            <span className="font-semibold">Download Full Resume</span>
-          </button>
         </motion.div>
       </div>
     </div>
