@@ -32,8 +32,7 @@ const About: React.FC = () => {
     },
     {
       name: 'Adobe Creative Suite',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/adobe.png`} alt="Adobe Creative Suite" size="w-20 h-20" />'
-    },
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/adobe.png'
     
     {
       name: 'ISTA',
@@ -61,12 +60,12 @@ const About: React.FC = () => {
     },
     {
       name: 'ZÜND',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/zund.png`} alt="ZÜND Logo" />',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/zund.png',
       size: 'w-20 h-20',
     },
     {
       name: 'G7 Color Certified',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/g7.png`} alt="G7 Logo" />',
+      icon: '<img src={`${import.meta.env.BASE_URL}/skills/g7.png',
       size: 'w-16 h-16',
     },
   ];
