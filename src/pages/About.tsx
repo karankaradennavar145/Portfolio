@@ -61,12 +61,12 @@ const About: React.FC = () => {
     },
     {
       name: 'ZÜND',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/zund.png`} alt="ZÜND Logo" />',
+      icon: '<img src={`${import.meta.env.BASE_URL}skills/zund.png`} alt="ZÜND Logo" />',
       size: 'w-20 h-20',
     },
     {
       name: 'G7 Color Certified',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/g7.png`} alt="G7 Logo" />',
+      icon: '<img src={`${import.meta.env.BASE_URL}skills/g7.png`} alt="G7 Logo" />',
       size: 'w-16 h-16',
     },
   ];
