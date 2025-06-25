@@ -30,7 +30,7 @@ const About: React.FC = () => {
     },
     {
       name: 'ISTA',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/ista.png`} alt="ISTA Logo" className="w-20 h-20" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/ista.png`} alt="ISTA Logo" className="w-18 h-18" />,
     },
     {
       name: 'ASTM',
@@ -38,11 +38,11 @@ const About: React.FC = () => {
     },
     {
       name: 'FDA',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/fda.png`} alt="FDA Logo" className="w-20 h-20" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/fda.png`} alt="FDA Logo" className="w-18 h-18" />,
     },
     {
       name: 'Xerox',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-20 h-20" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-18 h-18" />,
     },
     {
       name: 'ZÜND',
