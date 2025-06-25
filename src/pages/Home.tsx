@@ -43,7 +43,7 @@ const Home: React.FC = () => {
                 
                 <a
                   href={`${import.meta.env.BASE_URL}resume.pdf`}
-                  download="Karan_Karadennavar_Resume.pdf"
+                  download="resume.pdf"
                   className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <Download size={20} />
