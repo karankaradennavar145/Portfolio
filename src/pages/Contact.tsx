@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin, Github, Send, CheckCircle, Loader2 } from 'lucide-react';
 import emailjs from 'emailjs-com';
-import BackgroundAnimation from '../components/BackgroundAnimation';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -79,7 +78,6 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <BackgroundAnimation />
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
