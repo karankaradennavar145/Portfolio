@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Linkedin, Github, Send, CheckCircle, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Send, CheckCircle, Loader2, Star } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
@@ -12,6 +12,15 @@ const Contact: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [likeCount, setLikeCount] = useState(() => Number(localStorage.getItem('likeCount')) || 0);
+  const [visitorCount, setVisitorCount] = useState(() => Number(localStorage.getItem('visitorCount')) || 0);
+
+  useEffect(() => {
+    // Increment visitor count on mount
+    const prev = Number(localStorage.getItem('visitorCount')) || 0;
+    localStorage.setItem('visitorCount', String(prev + 1));
+    setVisitorCount(prev + 1);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -46,6 +55,12 @@ const Contact: React.FC = () => {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleLike = () => {
+    const newCount = likeCount + 1;
+    setLikeCount(newCount);
+    localStorage.setItem('likeCount', String(newCount));
   };
 
   const contactInfo = [
@@ -289,31 +304,24 @@ const Contact: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Connect with me - Middle Section */}
+        {/* Thank You Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 rounded-2xl mt-12 max-w-2xl mx-auto"
+          className="bg-gradient-to-r from-blue-900 via-blue-800 to-purple-900 rounded-2xl p-8 text-center mt-12"
         >
-          <h3 className="text-lg font-semibold mb-4 text-center">Connect with me</h3>
-          <div className="flex justify-center space-x-4">
-            <a
-              href="https://www.linkedin.com/in/karan-karadennavar-b12917b6/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
+          <h3 className="text-2xl font-bold mb-4">Thank you for visiting the portfolio!</h3>
+          <p className="text-lg text-gray-200 mb-6">Please drop a like if you liked it.</p>
+          <div className="flex flex-col items-center gap-4">
+            <button
+              onClick={handleLike}
+              className="flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-3 rounded-full text-lg font-semibold shadow transition-colors"
             >
-              <Linkedin size={20} />
-            </a>
-            <a
-              href="https://github.com/karankaradennavar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 bg-gray-800 text-white rounded-lg flex items-center justify-center hover:bg-gray-900 transition-colors"
-            >
-              <Github size={20} />
-            </a>
+              <Star size={24} className="text-white" fill="currentColor" />
+              Like {likeCount > 0 && <span>({likeCount})</span>}
+            </button>
+            <div className="mt-2 text-gray-300 text-sm">Visitor count: <span className="font-bold text-white">{visitorCount}</span></div>
           </div>
         </motion.div>
       </div>
