@@ -14,59 +14,43 @@ const About: React.FC = () => {
   const skillIcons = [
     {
       name: 'SAP',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/sap.png',
-      alt: 'SAP Logo',
-      size: 'w-20 h-20',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/sap.png`} alt="SAP Logo" className="w-20 h-20" />,
     },
     {
       name: 'SolidWorks',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/solidworks.png',
-      alt: 'SolidWorks Logo',
-      size: 'w-16 h-16',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/solidworks.png`} alt="SolidWorks Logo" className="w-16 h-16" />,
     },
     {
       name: 'ArtiosCAD',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/artioscad.png',
-      alt: 'ArtiosCAD Logo',
-      size: 'w-16 h-16',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/artioscad.png`} alt="ArtiosCAD Logo" className="w-16 h-16" />,
     },
     {
       name: 'Adobe Creative Suite',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/adobe.png',
-    
+      icon: <img src={`${import.meta.env.BASE_URL}skills/adobe.png`} alt="Adobe Creative Suite" className="w-20 h-20" />,
+    },
     {
       name: 'ISTA',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/ista.png',
-      alt: 'ISTA Logo',
-      size: 'w-20 h-20',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/ista.png`} alt="ISTA Logo" className="w-20 h-20" />,
     },
     {
       name: 'ASTM',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/astm.png',
-      alt: 'ASTM Logo',
-      size: 'w-20 h-20',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/astm.png`} alt="ASTM Logo" className="w-20 h-20" />,
     },
     {
       name: 'FDA',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/fda.png',
-      alt: 'FDA Logo',
-      size: 'w-20 h-20',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/fda.png`} alt="FDA Logo" className="w-20 h-20" />,
     },
     {
       name: 'Xerox',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/xerox.png',
-      alt: 'Xerox Logo',
-      size: 'w-20 h-20',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-20 h-20" />,
     },
     {
       name: 'ZÜND',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/zund.png',
-      size: 'w-20 h-20',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/zund.png`} alt="ZÜND Logo" className="w-20 h-20" />,
     },
     {
       name: 'G7 Color Certified',
-      icon: '<img src={`${import.meta.env.BASE_URL}/skills/g7.png',
-      size: 'w-16 h-16',
+      icon: <img src={`${import.meta.env.BASE_URL}skills/g7.png`} alt="G7 Logo" className="w-16 h-16" />,
     },
   ];
 
@@ -214,11 +198,7 @@ const About: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="bg-gray-100 dark:bg-gray-300 text-blue-700 dark:text-blue-700 px-4 py-2 rounded-xl text-center text-sm font-medium transition-all duration-300 cursor-pointer flex flex-col items-center justify-center hover:scale-105 hover:shadow-lg hover:bg-gray-200 dark:hover:bg-gray-400"
               >
-                <img
-                  src={`${import.meta.env.BASE_URL}skills/${skill.name.toLowerCase().replace(' ', '-')}.png`}
-                  alt={skill.alt}
-                  className={`${skill.size} object-contain mx-auto`}
-                />
+                {skill.icon}
                 <span className="mt-2">{skill.name}</span>
               </motion.div>
             ))}
