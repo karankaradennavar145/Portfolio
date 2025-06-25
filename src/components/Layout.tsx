@@ -93,13 +93,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     {item.name}
                   </Link>
                 ))}
-                <button
-                  onClick={() => window.open('/resume.pdf', '_blank')}
+                <a
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
+                  download="Karan_Karadennavar_Resume.pdf"
                   className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
                 >
                   <Download size={16} />
                   <span>Resume</span>
-                </button>
+                </a>
                 <button
                   onClick={toggleDarkMode}
                   className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -150,13 +151,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                       {item.name}
                     </Link>
                   ))}
-                  <button
-                    onClick={() => window.open('/resume.pdf', '_blank')}
+                  <a
+                    href={`${import.meta.env.BASE_URL}resume.pdf`}
+                    download="Karan_Karadennavar_Resume.pdf"
                     className="flex items-center space-x-2 w-full bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg transition-colors"
                   >
                     <Download size={16} />
                     <span>Resume</span>
-                  </button>
+                  </a>
                 </div>
               </motion.div>
             )}
