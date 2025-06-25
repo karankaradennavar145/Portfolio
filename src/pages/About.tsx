@@ -144,7 +144,7 @@ const About: React.FC = () => {
                 Location & Availability
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Currently based in <strong>Rochester, New York</strong>, available for 
+                Currently based in <strong>Rochester, New York</strong> available for 
                 on-site and remote opportunities throughout the United States.
               </p>
             </div>
