@@ -14,15 +14,15 @@ const About: React.FC = () => {
   const skillIcons = [
     {
       name: 'SAP',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/sap.png`} alt="SAP Logo" className="w-20 h-20" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/sap.png`} alt="SAP Logo" className="w-26 h-24" />,
     },
     {
       name: 'SolidWorks',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/solidworks.png`} alt="SolidWorks Logo" className="w-16 h-16" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/solidworks.png`} alt="SolidWorks Logo" className="w-26 h-26" />,
     },
     {
       name: 'ArtiosCAD',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/artioscad.png`} alt="ArtiosCAD Logo" className="w-16 h-16" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/artioscad.png`} alt="ArtiosCAD Logo" className="w-20 h-20" />,
     },
     {
       name: 'Adobe Creative Suite',
@@ -30,19 +30,19 @@ const About: React.FC = () => {
     },
     {
       name: 'ISTA',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/ista.png`} alt="ISTA Logo" className="w-20 h-20" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/ista.png`} alt="ISTA Logo" className="w-24 h-16" />,
     },
     {
       name: 'ASTM',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/astm.png`} alt="ASTM Logo" className="w-20 h-20" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/astm.png`} alt="ASTM Logo" className="w-26 h-20" />,
     },
     {
       name: 'FDA',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/fda.png`} alt="FDA Logo" className="w-16 h-16" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/fda.png`} alt="FDA Logo" className="w-18 h-16" />,
     },
     {
       name: 'Xerox',
-      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-16 h-16" />,
+      icon: <img src={`${import.meta.env.BASE_URL}skills/xerox.png`} alt="Xerox Logo" className="w-18 h-16" />,
     },
     {
       name: 'ZÜND',
