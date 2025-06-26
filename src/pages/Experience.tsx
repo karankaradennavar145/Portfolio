@@ -91,7 +91,7 @@ const Experience: React.FC = () => {
       location: "Belgavi, India",
       period: "Nov 2021 - Sep 2021",
       type: "Full-time",
-      logo: <img src={`${import.meta.env.BASE_URL}skills/fda.png`} alt="FDA Logo" className="w-16 h-16" />
+      logo: `${import.meta.env.BASE_URL}skills/aequs.png`,
       iconContainerClass: "w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-lg",
       iconImgClass: "w-14 h-14 object-contain",
       description: "Led packaging and print development for globally recognized toy brands like Hasbro and Spin Master, ensuring brand integrity, cost efficiency, and print accuracy across large-scale production. Worked closely with major print vendors to conduct press checks, approve proofs, and optimize packaging structures, achieving notable cost savings and enhanced visual consistency..",

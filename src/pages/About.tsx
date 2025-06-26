@@ -146,17 +146,31 @@ const About: React.FC = () => {
               <div className="space-y-4">
                 <div className="border-l-4 border-blue-600 pl-4 mb-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-semibold">MS in Packaging and Graphic Media</h3>
+                    <div className="flex items-center">
+                      <div className="bg-white p-1 rounded shadow mr-4 flex items-center justify-center">
+                        <img src={`${import.meta.env.BASE_URL}skills/rit.png`} alt="RIT Logo" className="w-10 h-10 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">MS in Packaging and Graphic Media</h3>
+                        <p className="text-blue-600 dark:text-blue-400">Rochester Institute of Technology (RIT), Rochester, NY</p>
+                      </div>
+                    </div>
                     <span className="text-sm text-gray-500 dark:text-gray-400 font-normal ml-4">May 2025</span>
                   </div>
-                  <p className="text-blue-600 dark:text-blue-400">Rochester Institute of Technology (RIT), Rochester, NY</p>
                 </div>
                 <div className="border-l-4 border-blue-600 pl-4">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-semibold">B.Tech in Print, Media & Packaging</h3>
+                    <div className="flex items-center">
+                      <div className="bg-white p-1 rounded shadow mr-4 flex items-center justify-center">
+                        <img src={`${import.meta.env.BASE_URL}skills/manipal.png`} alt="Manipal Logo" className="w-10 h-10 object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">B.Tech in Print, Media & Packaging</h3>
+                        <p className="text-blue-600 dark:text-blue-400">Manipal Institute of Technology, India</p>
+                      </div>
+                    </div>
                     <span className="text-sm text-gray-500 dark:text-gray-400 font-normal ml-4">May 2020</span>
                   </div>
-                  <p className="text-blue-600 dark:text-blue-400">Manipal Institute of Technology, India</p>
                 </div>
               </div>
             </div>
