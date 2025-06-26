@@ -13,14 +13,6 @@ const Contact: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [likeCount, setLikeCount] = useState(() => Number(localStorage.getItem('likeCount')) || 0);
-  const [visitorCount, setVisitorCount] = useState(() => Number(localStorage.getItem('visitorCount')) || 0);
-
-  useEffect(() => {
-    // Increment visitor count on mount
-    const prev = Number(localStorage.getItem('visitorCount')) || 0;
-    localStorage.setItem('visitorCount', String(prev + 1));
-    setVisitorCount(prev + 1);
-  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -321,7 +313,6 @@ const Contact: React.FC = () => {
               <Star size={24} className="text-white" fill="currentColor" />
               Like {likeCount > 0 && <span>({likeCount})</span>}
             </button>
-            <div className="mt-2 text-gray-300 text-sm">Visitor count: <span className="font-bold text-white">{visitorCount}</span></div>
           </div>
         </motion.div>
       </div>
